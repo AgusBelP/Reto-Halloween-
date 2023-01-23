@@ -1,40 +1,77 @@
 <!DOCTYPE html>
 
 <html>
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Halloween scare!</title>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    
 
-</head>
-<body>
-    
-    <form>
-        <p>Ingrese un nombre: <input type="text" id="name"></p>
-        <p>Ingrese su edad: <input type="number" id="age"></p>
-        <p>Ingrese su altura en cm: <input type="number" id="altura"></p>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
 
-        <button type="button" id="add">Agregar un nuevo niño</button>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Raleway:wght@400;700&display=swap" />
 
-        <p>Ingrese una opción:    
-        <input type="radio" name="tot" id="trick"><label>Trick</label>
-        <input type="radio" name="tot" id="treat"><label>Treat</label>
-        </p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <button type="button" id="submit">Enviar</button>
-        <button type="button" id="end">Finalizar</button><br>
-        <br>
-        <label id="tag">Tu resultado eeeesss.....</label><br>  
-        <br>
-        <label id="resultado">Hola</label><br>       
-        
-        
-    </form>
-    
-    
+  <body class="bg-gradient">
+    <div class="container">
+      <section class="border row">
+        <article class="col-12 justify-content-center">
+          <form action="https://formsubmit.co/agus@email.com" method="POST">
+            <div class="col-lg-6 offset-lg-3 my-3">
+              <label for="name" class="form-label">Ingrese su nombre:</label>
+              <input class="form-control" id="name" name="name" type="text" placeholder="Tu nombre" required />
+            </div>
+            <div class="col-lg-6 offset-lg-3 mb-3">
+              <label for="age" class="form-label">Ingrese su edad:</label>
+              <input class="form-control" id="age" name="age" type="number" placeholder="Tu edad" required />
+            </div>
+            <div class="col-lg-6 offset-lg-3 mb-3">
+              <label for="altura">Ingrese su altura en cm:</label>
+              <input class="form-control" id="altura" name="altura" type="number" placeholder="Tu altura" required />
+            </div>
+            <div class="my-4 text-center">
+              <button class="btn btn-lg btn-danger" type="button" id="add">Agregar un nuevo niño</button>
+            </div>
+          </form>
+        </article>
+      </section>
+      <section class="border row my-3">
+        <article class="col-12 text-center">
+          <label>Ingrese una opción:</label>
+          <p class="mt-2">
+            <input type="radio" name="tot" id="trick" />
+            <label>Trick</label>
+          </p>
+          <p>
+            <input type="radio" name="tot" id="treat" />
+            <label>Treat</label>
+          </p>
+        </article>
+      </section>
+      <section class="border row text-center">
+        <form>
+          <button class="btn btn-lg btn-success" type="button" id="submit">Enviar</button>
+          <button class="btn btn-lg btn-warning" type="button" id="end">Finalizar</button><br />
+          <br />
+          <label id="tag">Tu resultado eeeesss.....</label><br />
+          <br />
+          <label id="resultado">Hola</label><br />
+        </form>
+      </section>
+    </div>
+
     <script src="index.js"></script>
-   
-</body>
+  </body>
 </html>

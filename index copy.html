@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Halloween scare!</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form>
+      <p>Ingrese un nombre: <input type="text" id="name" /></p>
+      <p>Ingrese su edad: <input type="number" id="age" /></p>
+      <p>Ingrese su altura en cm: <input type="number" id="altura" /></p>
+
+      <button type="button" id="add">Agregar un nuevo niño</button>
+
+      <p>
+        Ingrese una opción: <input type="radio" name="tot" id="trick" /><label>Trick</label>
+        <input type="radio" name="tot" id="treat" /><label>Treat</label>
+      </p>
+
+      <button type="button" id="submit">Enviar</button>
+      <button type="button" id="end">Finalizar</button><br />
+      <br />
+      <label id="tag">Tu resultado eeeesss.....</label><br />
+      <br />
+      <label id="resultado">Hola</label><br />
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>

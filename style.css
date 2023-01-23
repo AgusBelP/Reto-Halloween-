@@ -1,0 +1,32 @@
+.bg-gradient {
+  background-color: rgba(222, 67, 29, 1);
+  /*background-image: linear-gradient(135deg, rgba(222, 67, 29, 0.91), rgba(79, 22, 7, 0.97) 79%);*/
+  background-image: linear-gradient(131deg, rgba(212, 36, 30, 0.92), rgba(83, 184, 152, 1));
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
