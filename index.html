@@ -27,19 +27,19 @@
   <body>
     <main class="bg-back">
       <div class="container min-vh-100">
-        <section class="border row">
+        <section class="row fs-5">
           <article class="col-12 justify-content-center">
             <form action="https://formsubmit.co/agus@email.com" method="POST">
               <div class="col-lg-6 offset-lg-3 my-3">
-                <label for="name" class="form-label">Ingrese su nombre:</label>
+                <p><label for="name" class="form-label">Ingrese su nombre</label> &#128118;&#128102;&#128103;</p>
                 <input class="form-control" id="name" name="name" type="text" placeholder="Tu nombre" required />
               </div>
               <div class="col-lg-6 offset-lg-3 mb-3">
-                <label for="age" class="form-label">Ingrese su edad:</label>
+                <p><label for="age" class="form-label">Ingrese su edad</label> &#127874;</p>
                 <input class="form-control" id="age" name="age" type="number" placeholder="Tu edad" required />
               </div>
               <div class="col-lg-6 offset-lg-3 mb-3">
-                <label for="altura">Ingrese su altura en cm:</label>
+                <p><label for="altura">Ingrese su altura en cm</label> &#9195;</p>
                 <input class="form-control" id="altura" name="altura" type="number" placeholder="Tu altura" required />
               </div>
               <div class="my-4 text-center">
@@ -48,27 +48,24 @@
             </form>
           </article>
         </section>
-        <section class="border row my-3">
+        <section class="row my-3 text-white fs-4">
           <article class="col-12 text-center">
             <label>Ingrese una opción:</label>
-            <p class="mt-2">
-              <input type="radio" name="tot" id="trick" />
-              <label>Trick</label>
-            </p>
+            <p class="mt-2"><input type="radio" name="tot" id="trick" /> <label>Trick</label> &#128121;</p>
             <p>
               <input type="radio" name="tot" id="treat" />
-              <label>Treat</label>
+              <label>Treat</label> &#127873;
             </p>
           </article>
         </section>
-        <section class="border row text-center">
+        <section class="row text-center text-white">
           <form>
             <button class="btn btn-lg btn-success" type="button" id="submit">Enviar</button>
-            <button class="btn btn-lg btn-warning" type="button" id="end">Finalizar</button><br />
-            <br />
-            <label id="tag">Tu resultado eeeesss.....</label><br />
-            <br />
-            <label id="resultado">Hola</label><br />
+            <button class="btn btn-lg btn-secondary" type="button" id="end">Finalizar</button><br />
+
+            <label class="mt-3 fs-3" id="tag">Tu resultado eeeesss.....</label>
+
+            <label class="fs-3" id="resultado">Por favor ingresa los datos solicitados</label><br />
           </form>
         </section>
       </div>

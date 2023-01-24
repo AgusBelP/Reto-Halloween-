@@ -11,14 +11,24 @@ altura = 0;
 cantidad_sustos = 0;
 cantidad_dulces = 0;
 
-function genera_random (resultado, tipo){
+function genera_sustos (resultado){
     i = 0
     result = ""
-    do{result += tipo[Math.floor(Math.random()*tipo.length)];
+    do{result += sustos[Math.floor(Math.random()*sustos.length)];
         i += 1;
       }
     while (i != resultado);
    return result;
+}
+
+function genera_dulces (resultado){
+    i = 0
+    result = ""
+    do{result += dulces[Math.floor(Math.random()*dulces.length)];
+        i += 1;
+      }
+    while (i != resultado);
+    return result;
 }
 
 
@@ -33,7 +43,7 @@ document.getElementById("add").onclick = function(){
 
 document.getElementById("submit").onclick = function(){
 
-    if(document.getElementById("trick").checked){        
+    if(document.getElementById("trick").checked){
         nombres.forEach(element => { 
             letra = Math.trunc(element.length/2);
             letras += letra  
@@ -56,7 +66,7 @@ document.getElementById("submit").onclick = function(){
         
         cantidad_sustos += altura;
             
-        document.getElementById("resultado").innerHTML = genera_random(cantidad_sustos,sustos)
+        document.getElementById("resultado").innerHTML = genera_sustos(cantidad_sustos)
         
         }
 
@@ -86,11 +96,11 @@ document.getElementById("submit").onclick = function(){
         
         cantidad_dulces += altura;
 
-        document.getElementById("resultado").innerHTML = genera_random(cantidad_dulces,dulces);
+        document.getElementById("resultado").innerHTML = genera_dulces(cantidad_dulces);
     }
     
     else{console.log("Ha ocurrido un error, por favor inténtalo de nuevo");}
-}
+    }
    
 document.getElementById("end").onclick = function(){
     nombres = [];

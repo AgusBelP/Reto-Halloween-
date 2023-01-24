@@ -1,6 +1,5 @@
 .bg-back {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 253, 187, 1) 100%);
+  background: linear-gradient(rgb(242, 29, 5) 25%, rgb(13, 10, 10), rgb(242, 120, 5) 95%);
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
